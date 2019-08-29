@@ -1,5 +1,5 @@
 apiVersion: apps/v1
-kind: replicaSet
+kind: ReplicaSet
 metadata:
  name: test-rc
  labels:
@@ -9,6 +9,9 @@ spec:
   template:
     metadata:
       name: test
+      labels:
+        app: kat
+        type: front-end
     spec:
       containers:
          - name: prabhu

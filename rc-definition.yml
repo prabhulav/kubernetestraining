@@ -9,6 +9,9 @@ spec:
   template:
     metadata: 
       name: test
+      labels:
+            app: myappfe
+            type: front-end
     spec:
       containers:
          - name: prabhu
