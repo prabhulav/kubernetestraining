@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: replicaSet
+metadata:
+ name: test-rc
+ labels:
+   app: myapp
+   type: front-end
+spec:
+  template:
+    metadata:
+      name: test
+    spec:
+      containers:
+         - name: prabhu
+           image: nginx
+  replicas: 3
+  selector:
+        matchLabels:
+                type: front-end
