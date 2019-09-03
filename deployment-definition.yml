@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
          - name: prabhu
-           image: nginx:1.7.1
+           image: nginx:1.12
   replicas: 3
   selector:
         matchLabels:
