@@ -9,5 +9,5 @@ spec:
       port: 80
       nodePort: 30008
   selector:
-    app: test-rc
+    app: kat
     type: front-end
